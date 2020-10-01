@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.html">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<header>
+		<center>
+		<h2>Array Methods</h2>
+	<div class="a">
+<p id="demo"></p>
+<button onclick="myFunction()">Click here</button>
+<p id="demo1"></p>
+<script type="text/javascript">
+	var ages = [24,12,16,40,23,63,18];
+	document.getElementById("demo").innerHTML ="<br><u>filter() Method</u>:<br>The filter() method creates an array filled with all array elements that pass a test (provided as a function) . <br>JavaScript Array provides the filter() method that allows you to do this task in a shorter and cleaner way.<br>Here is the example for this method<br> Which of the following ages are elgible for voting?<br>"+ages;
+var ages = [24,12,16,40,23,63,18];
+
+function check(age) {
+  return age >= 18;
+}
+
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "The following ages are elgible for voting:<br>"+ages.filter(check);
+}
+</script>
+</div>
+<button style= "margin-top:90px"><a href="index.html" style="text-decoration: none;font-size: 19px; display: block;" >Back to Homepage</a></button>
+</header>
+<div class="footer">
+  <p>Developed by A.Farheen Taj,MITSWC192023,CSE,MITS</p>
+  </div>
+</body>
+</center>
+</html>
